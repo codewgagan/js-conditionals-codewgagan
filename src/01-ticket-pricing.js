@@ -44,4 +44,5 @@ export function getTicketPrice(age, isWeekend) {
   }
 
   return price;
+  
 }
