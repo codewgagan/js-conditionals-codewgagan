@@ -26,4 +26,23 @@
  */
 export function calculateGrade(score, hasExtraCredit) {
   // Your code here
+  if (typeof score !== "number") {
+    return "INVALID";
+  }
+  let percentage = Math.round(score);
+
+  if (percentage < 0 || percentage > 100) {
+    return "INVALID";
+  }
+
+  if (hasExtraCredit) {
+    score = Math.min(score + 5, 100);
+  }
+  if (score>=90) return 'A'
+  if (score>=80) return 'B'
+  if (score>=70) return 'C'
+  if (score>=60) return 'D'
+  if (score<60) return 'F'
+
+  
 }
