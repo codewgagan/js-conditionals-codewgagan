@@ -26,9 +26,11 @@ export function getTrafficAction(color) {
   if (typeof color !== "string") {
     return "INVALID SIGNAL";
   }
+  console.log(color);
 
   let normalisedColor = color.toLowerCase();
 
+  console.log(normalisedColor);
   switch (normalisedColor) {
     case "green":
       return "GO";
