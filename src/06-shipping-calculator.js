@@ -69,7 +69,7 @@ else
   }else{
     if(weight<=1)return 15;
     else if(weight<=5)return 25
-    else return 15
+    else return 40;
   }
 
 }
